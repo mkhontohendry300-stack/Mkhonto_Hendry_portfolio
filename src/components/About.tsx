@@ -2,12 +2,10 @@ import { useState, useEffect } from 'react';
 import { Code, Database, Zap, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import graduationImage from '@/assets/graduation-photo.png';
-
 const About = () => {
   const [yearsExp, setYearsExp] = useState(0);
   const [projectsCompleted, setProjectsCompleted] = useState(0);
   const [toolsMastered, setToolsMastered] = useState(0);
-
   useEffect(() => {
     const animateCounter = (target: number, setter: (value: number) => void, duration: number = 2000) => {
       let start = 0;
@@ -23,47 +21,37 @@ const About = () => {
       }, 50);
       return timer;
     };
-
     const timer1 = animateCounter(2, setYearsExp);
     const timer2 = animateCounter(10, setProjectsCompleted);
     const timer3 = animateCounter(15, setToolsMastered);
-
     return () => {
       clearInterval(timer1);
       clearInterval(timer2);
       clearInterval(timer3);
     };
   }, []);
-
-  const highlights = [
-    {
-      icon: Database,
-      title: "Data Analysis",
-      description: "Transforming raw data into actionable insights with advanced analytics",
-      color: "text-gold"
-    },
-    {
-      icon: Code,
-      title: "Technical Skills",
-      description: "Python, R, SQL, and modern data visualization tools",
-      color: "text-charcoal"
-    },
-    {
-      icon: Zap,
-      title: "Innovation",
-      description: "Combining analytical precision with modern technology",
-      color: "text-gold-dark"
-    },
-    {
-      icon: Users,
-      title: "Collaboration",
-      description: "Driving data-driven decision making across teams",
-      color: "text-charcoal-light"
-    }
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+  const highlights = [{
+    icon: Database,
+    title: "Data Analysis",
+    description: "Transforming raw data into actionable insights with advanced analytics",
+    color: "text-gold"
+  }, {
+    icon: Code,
+    title: "Technical Skills",
+    description: "Python, R, SQL, and modern data visualization tools",
+    color: "text-charcoal"
+  }, {
+    icon: Zap,
+    title: "Innovation",
+    description: "Combining analytical precision with modern technology",
+    color: "text-gold-dark"
+  }, {
+    icon: Users,
+    title: "Collaboration",
+    description: "Driving data-driven decision making across teams",
+    color: "text-charcoal-light"
+  }];
+  return <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
@@ -100,16 +88,7 @@ const About = () => {
           {/* Main layout */}
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Left side → Graduation picture */}
-            <div className="flex justify-center">
-              <img 
-                src={graduationImage}
-                alt="Mkhonto Hendry Mike Graduation" 
-                className="mt-30 rounded-2xl shadow-lg w-full max-w-sm object-cover border-2 border-gold/20"
-                loading="lazy"
-                width="384"
-                height="570"
-              />
-            </div>
+            
 
             {/* Right side → Text + Highlights */}
             <div className="space-y-8">
@@ -125,8 +104,7 @@ const About = () => {
 
               {/* Highlights */}
               <div className="grid sm:grid-cols-2 gap-6">
-                {highlights.map((highlight, index) => (
-                  <Card key={index} className="bg-white border-border/50 hover:shadow-soft transition-all duration-300">
+                {highlights.map((highlight, index) => <Card key={index} className="bg-white border-border/50 hover:shadow-soft transition-all duration-300">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         <div className={`${highlight.color} mt-1`}>
@@ -138,15 +116,12 @@ const About = () => {
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
