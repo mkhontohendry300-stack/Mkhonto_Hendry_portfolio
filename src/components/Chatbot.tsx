@@ -99,7 +99,7 @@ const Chatbot = () => {
       {/* Chat Toggle Button */}
       <Button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-sage-dark hover:bg-sage-dark/90 shadow-elegant"
+        className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-gold hover:bg-gold-dark text-charcoal shadow-elegant"
         size="icon"
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
@@ -128,7 +128,7 @@ const Chatbot = () => {
                   <div
                     className={`max-w-[80%] p-3 rounded-lg text-sm ${
                       message.sender === 'user'
-                        ? 'bg-sage-dark text-white'
+                        ? 'bg-gold text-charcoal'
                         : 'bg-muted text-foreground'
                     }`}
                   >
@@ -150,7 +150,7 @@ const Chatbot = () => {
               <Button 
                 onClick={handleSendMessage}
                 size="sm"
-                className="bg-sage-dark hover:bg-sage-dark/90"
+                className="bg-gold hover:bg-gold-dark text-charcoal"
               >
                 <Send size={16} />
               </Button>
