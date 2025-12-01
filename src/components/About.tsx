@@ -24,15 +24,15 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-charcoal">
+    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-charcoal">
               About <span className="text-gold">Me</span>
             </h2>
             
-            <div className="space-y-6 text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-gray leading-relaxed">
               <p>
                 I am a detail-oriented and analytical professional passionate about data-driven insights and innovation. I hold a Diploma in Mathematical Sciences from Cape Peninsula University of Technology.
               </p>
@@ -48,13 +48,13 @@ const About = () => {
           {/* Highlights */}
           <div className="grid sm:grid-cols-3 gap-6">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="bg-charcoal-light border-border/30 hover:border-gold/30 transition-all duration-300">
+              <Card key={index} className="bg-white border-gold/20 hover:shadow-soft transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <highlight.icon className={highlight.color} size={20} />
-                    <h4 className="font-semibold text-white">{highlight.title}</h4>
+                    <h4 className="font-semibold text-charcoal">{highlight.title}</h4>
                   </div>
-                  <p className="text-sm text-gray-400">{highlight.description}</p>
+                  <p className="text-sm text-gray">{highlight.description}</p>
                 </CardContent>
               </Card>
             ))}
