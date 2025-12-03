@@ -121,7 +121,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center pt-6 border-t border-border">
             <p className="text-gray text-sm flex items-center justify-center gap-1 flex-wrap">
-              Made with <Heart size={14} className="text-gold fill-current" /> by Hendry Mike
+              Made with Javascript <Heart size={14} className="text-gold fill-current" /> by Hendry Mike
               <span className="mx-2">©</span>
               {currentYear}. All rights reserved.
             </p>
