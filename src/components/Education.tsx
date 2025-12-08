@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const Education = () => {
   const education = [
     {
-      degree: "Diploma",
-      field: "Mathematical Sciences",
+      degree: "Diploma Mathematical Sciences",
+      field: "Cape Peninsula University of Technology",
       institution: "Cape Peninsula University of Technology",
       location: "Cape Town",
       period: "2024",
