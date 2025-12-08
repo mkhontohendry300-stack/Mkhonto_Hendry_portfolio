@@ -19,7 +19,7 @@ const Experience = () => {
       technologies: ["Python", "Data Analysis", "Digital Transformation", "Project Management"]
     },
     {
-      title: "Junior Data Analyst",
+      title: "Data Analyst",
       company: "Statistics South Africa",
       location: "Cape Town, South Africa",
       period: "Jul 2024 - Dec 2024",
@@ -31,7 +31,7 @@ const Experience = () => {
         "Applied community detection algorithms using NetworkX and Pandas",
         "Created insightful visualizations and interactive dashboards"
       ],
-      technologies: ["Python", "Pandas", "NetworkX", "Excel", "Data Visualization"]
+      technologies: ["Python", "Pandas", "NetworkX", "Excel", "Data Visualization", "R", "SQL"]
     },
     {
       title: "Volunteer Peer Helper",
