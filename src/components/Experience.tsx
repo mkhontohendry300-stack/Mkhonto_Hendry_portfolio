@@ -34,10 +34,10 @@ const Experience = () => {
       technologies: ["Python", "Pandas", "NetworkX", "Excel", "Data Visualization", "R", "SQL"]
     },
     {
-      title: "Volunteer Peer Helper",
+      title: "Volunteer Peer Helper (Student Counselling)",
       company: "CPUT",
       location: "Cape Town, South Africa",
-      period: "Feb 2024 - Sep 2024",
+      period: "Feb 2024 - Sep 2025",
       type: "Volunteer",
       description: "Provided academic and emotional support to students, facilitating workshops on mental health and exam preparation.",
       achievements: [
