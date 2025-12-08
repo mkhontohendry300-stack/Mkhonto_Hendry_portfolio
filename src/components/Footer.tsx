@@ -1,42 +1,34 @@
 import { Github, Linkedin, Mail, Heart, MapPin, Phone } from 'lucide-react';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const quickLinks = [
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" }
-  ];
-
-  const services = [
-    "Data Analysis",
-    "Visualization",
-    "Statistical Modeling",
-    "Digital Solutions"
-  ];
-
-  const socialLinks = [
-    {
-      icon: Github,
-      href: "https://github.com/Keitudimps?tab=repositories",
-      label: "GitHub"
-    },
-    {
-      icon: Linkedin,
-      href: "http://linkedin.com/in/fereshteh-keitumetse-dimpe-4a378b237",
-      label: "LinkedIn"
-    },
-    {
-      icon: Mail,
-      href: "mailto:mkhontohendry300@gmail.com",
-      label: "Email"
-    }
-  ];
-
-  return (
-    <footer className="bg-muted/50 border-t border-border py-16">
+  const quickLinks = [{
+    label: "About",
+    href: "#about"
+  }, {
+    label: "Skills",
+    href: "#skills"
+  }, {
+    label: "Experience",
+    href: "#experience"
+  }, {
+    label: "Projects",
+    href: "#projects"
+  }];
+  const services = ["Data Analysis", "Visualization", "Statistical Modeling", "Digital Solutions"];
+  const socialLinks = [{
+    icon: Github,
+    href: "https://github.com/Keitudimps?tab=repositories",
+    label: "GitHub"
+  }, {
+    icon: Linkedin,
+    href: "http://linkedin.com/in/fereshteh-keitumetse-dimpe-4a378b237",
+    label: "LinkedIn"
+  }, {
+    icon: Mail,
+    href: "mailto:mkhontohendry300@gmail.com",
+    label: "Email"
+  }];
+  return <footer className="bg-muted/50 border-t border-border py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Main Footer Content */}
@@ -44,25 +36,18 @@ const Footer = () => {
             {/* Brand Section */}
             <div>
               <h3 className="text-xl font-bold mb-4 text-charcoal">Hendry Mike</h3>
-              <p className="text-gray text-sm leading-relaxed">
-                Data Analyst & Digital Associate passionate about transforming data into insights.
-              </p>
+              <p className="text-gray text-sm leading-relaxed">Data Analyst & Full stack Software Development, passionate about transforming data into insights and building website.</p>
             </div>
 
             {/* Quick Links */}
             <div>
               <h4 className="font-semibold mb-4 text-charcoal">Quick Links</h4>
               <ul className="space-y-2">
-                {quickLinks.map((link, index) => (
-                  <li key={index}>
-                    <a
-                      href={link.href}
-                      className="text-gray hover:text-gold transition-colors duration-300 text-sm"
-                    >
+                {quickLinks.map((link, index) => <li key={index}>
+                    <a href={link.href} className="text-gray hover:text-gold transition-colors duration-300 text-sm">
                       {link.label}
                     </a>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
 
@@ -70,11 +55,9 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4 text-charcoal">Services</h4>
               <ul className="space-y-2">
-                {services.map((service, index) => (
-                  <li key={index} className="text-gray text-sm">
+                {services.map((service, index) => <li key={index} className="text-gray text-sm">
                     {service}
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
 
@@ -104,18 +87,9 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex justify-center items-center gap-4 py-8 border-t border-border">
-            {socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-charcoal flex items-center justify-center text-white hover:text-gold hover:bg-charcoal-light transition-all duration-300"
-                aria-label={link.label}
-              >
+            {socialLinks.map((link, index) => <a key={index} href={link.href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-charcoal flex items-center justify-center text-white hover:text-gold hover:bg-charcoal-light transition-all duration-300" aria-label={link.label}>
                 <link.icon size={18} />
-              </a>
-            ))}
+              </a>)}
           </div>
 
           {/* Copyright */}
@@ -128,8 +102,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
