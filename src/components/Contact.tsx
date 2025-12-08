@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { Mail, Phone, MapPin, Download, CheckCircle, Sparkles } from "lucide-react";
+import { Mail, Phone, Download, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -17,11 +17,6 @@ const Contact = () => {
     title: "Phone",
     value: "+27 793003577",
     href: "tel:+27793003577"
-  }, {
-    icon: MapPin,
-    title: "Location",
-    value: "Cape Town, South Africa",
-    href: "#"
   }];
   const workBenefits = [{
     title: "Advanced data analysis and visualization with Python, R, and SQL"
@@ -60,10 +55,29 @@ const Contact = () => {
           <h2 className="text-4xl font-bold mb-4 text-foreground">
             Let&apos;s <span className="text-earth-dark">Connect</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I&apos;m always interested in new opportunities and exciting projects.
-            Let&apos;s discuss how we can bring your ideas to life.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            Let&apos;s build something amazing together. I&apos;m available
+            for data analyst roles, digital transformation projects, and exciting collaborations.
           </p>
+          <div className="flex justify-center gap-4 flex-wrap">
+            <Button variant="outline" size="lg" asChild className="border-sage-dark/40 text-sage-dark hover:bg-sage-dark/10">
+              <a href="mailto:mkhontohendry300@gmail.com">
+                <Mail className="mr-2 h-4 w-4" />
+                Email Me
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild className="border-earth-dark/40 text-earth-dark hover:bg-earth-dark/10">
+              <a href="https://www.linkedin.com/in/hendry-mike-mkhonto-189904220" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </Button>
+            <Button asChild className="bg-sage-dark hover:bg-sage-dark/90 text-white transition-all duration-300" size="lg">
+              <a href="/cv.pdf" download>
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+              </a>
+            </Button>
+          </div>
         </motion.div>
 
         {/* Layout */}
@@ -125,35 +139,6 @@ const Contact = () => {
               </div>)}
           </div>
 
-          <div className="text-center bg-muted/40 rounded-2xl p-10 shadow-md">
-            <h4 className="font-semibold mb-4 text-foreground text-xl flex items-center justify-center gap-2">
-              <Sparkles className="text-sage-dark" /> Ready to collaborate?
-            </h4>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Let&apos;s build something amazing together. I&apos;m available
-              for data analyst roles, digital transformation projects, and exciting collaborations.
-            </p>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <Button variant="outline" size="lg" asChild className="border-sage-dark/40 text-sage-dark hover:bg-sage-dark/10">
-                <a href="mailto:mkhontohendry300@gmail.com">
-                  <Mail className="mr-2 h-4 w-4" />
-                  Email Me
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" asChild className="border-earth-dark/40 text-earth-dark hover:bg-earth-dark/10">
-                <a href="https://www.linkedin.com/in/hendry-mike-mkhonto-189904220" target="_blank" rel="noopener noreferrer">
-                  LinkedIn
-                </a>
-              </Button>
-              <Button asChild className="bg-sage-dark hover:bg-sage-dark/90 text-white transition-all duration-300" size="lg">
-                <a href="/cv.pdf" download>
-                  <Download className="mr-2 h-4 w-4" />
-                  Download CV
-                </a>
-              </Button>
-              
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>;
