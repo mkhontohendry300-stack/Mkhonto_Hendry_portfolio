@@ -1,4 +1,4 @@
-import { GraduationCap, Calendar, MapPin } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin, BookOpen } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { motion } from "framer-motion";
@@ -12,7 +12,8 @@ const Education = () => {
       location: "Cape Town",
       period: "2024",
       status: "Completed",
-      description: "Comprehensive program covering statistical analysis, mathematical modeling, and data science principles."
+      description: "Comprehensive program covering statistical analysis, mathematical modeling, and data science principles.",
+      focusAreas: ["Advanced Statistics", "Data Analysis", "Mathematical Modeling", "Research Methods"]
     },
     {
       degree: "Full Stack Development",
@@ -21,7 +22,8 @@ const Education = () => {
       location: "Cape Town",
       period: "2024",
       status: "Completed",
-      description: "Intensive program covering modern web development, including frontend and backend technologies."
+      description: "Intensive program covering modern web development, including frontend and backend technologies.",
+      focusAreas: ["JavaScript", "React", "Node.js", "Database Design", "API Development"]
     },
     {
       degree: "Electrical Engineering (N1–N3)",
@@ -30,7 +32,8 @@ const Education = () => {
       location: "Mpumalanga",
       period: "2020",
       status: "Completed",
-      description: "Technical foundation in electrical engineering principles and systems."
+      description: "Technical foundation in electrical engineering principles and systems.",
+      focusAreas: ["Circuit Analysis", "Electronics", "Control Systems", "Technical Drawing"]
     },
     {
       degree: "National Senior Certificate",
@@ -39,7 +42,8 @@ const Education = () => {
       location: "Mpumalanga",
       period: "2018",
       status: "Completed",
-      description: "Secondary education with university admission qualification, strong foundation in mathematics and sciences."
+      description: "Secondary education with university admission qualification, strong foundation in mathematics and sciences.",
+      focusAreas: ["Mathematics", "Physical Sciences", "Academic Excellence"]
     }
   ];
 
@@ -108,9 +112,26 @@ const Education = () => {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray leading-relaxed">
+                    <p className="text-gray leading-relaxed mb-4">
                       {edu.description}
                     </p>
+                    <div>
+                      <div className="flex items-center gap-2 text-charcoal mb-2">
+                        <BookOpen size={16} className="text-gold" />
+                        <span className="text-sm font-medium">Key Focus Areas:</span>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {edu.focusAreas.map((area, areaIndex) => (
+                          <Badge 
+                            key={areaIndex} 
+                            variant="outline" 
+                            className="text-xs bg-gold/5 text-charcoal border-gold/30 hover:bg-gold/10 transition-colors"
+                          >
+                            {area}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>
