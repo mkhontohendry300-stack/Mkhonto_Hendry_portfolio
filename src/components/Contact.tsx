@@ -81,39 +81,7 @@ const Contact = () => {
         </motion.div>
 
         {/* Layout */}
-        <div className="flex flex-col md:flex-row md:space-x-12 gap-10">
-          {/* Contact Cards */}
-          <motion.div initial={{
-          opacity: 0,
-          x: -40
-        }} whileInView={{
-          opacity: 1,
-          x: 0
-        }} transition={{
-          duration: 0.6
-        }} viewport={{
-          once: true
-        }} className="flex flex-col gap-6 md:w-1/3 md:mt-14">
-            {contactInfo.map((contact, index) => <Card key={index} className="bg-card border border-border/30 shadow-md hover:shadow-xl hover:border-sage-dark/40 transition-all duration-300">
-                <CardContent className="p-6 flex items-center gap-5">
-                  <div className="p-4 rounded-xl bg-sage-light/20 text-sage-dark">
-                    <contact.icon size={28} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg text-foreground">
-                      {contact.title}
-                    </h3>
-                    {contact.href !== "#" ? <a href={contact.href} className="text-muted-foreground hover:text-sage-dark transition-colors">
-                        {contact.value}
-                      </a> : <p className="text-muted-foreground">{contact.value}</p>}
-                  </div>
-                </CardContent>
-              </Card>)}
-          </motion.div>
-
-          {/* Form */}
-          
-        </div>
+        
 
         {/* Why Work With Me */}
         <motion.div initial={{
