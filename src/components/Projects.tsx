@@ -2,29 +2,20 @@ import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import UIGeneratorImage from '@/assets/UI-generator-optimized.webp';
+
 import resumeImage from '@/assets/resume-optimized.webp';
 import AuthorImage from '@/assets/author-optimized.webp';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Quantifying Informal Sector Impact",
-      description: "Developed advanced Python models to analyze and quantify the informal sector's contribution to South Africa's GDP, providing critical insights for economic policy decisions.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
-      technologies: ["Python", "Pandas", "Excel", "Statistical Modeling"],
-      challenges: "Integrating diverse data sources and developing accurate predictive models",
+      title: "Tech Training Platform",
+      description: "Built a comprehensive tech training and education platform with multi-role authentication supporting Admin, Mentor, Candidate, and Client access. Features project browsing and collaborative learning.",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop",
+      technologies: ["React", "Authentication", "Role Management", "EdTech"],
+      challenges: "Implementing multi-role access control and creating an intuitive learning experience",
       githubUrl: "",
-      liveUrl: ""
-    },
-    {
-      title: "Community Detection in Social Media",
-      description: "Applied advanced community detection algorithms using NetworkX to identify patterns and relationships within social network data, revealing key insights into network structures.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
-      technologies: ["Python", "NetworkX", "Matplotlib", "Pandas"],
-      challenges: "Optimizing algorithm performance for large-scale network analysis",
-      githubUrl: "",
-      liveUrl: ""
+      liveUrl: "https://admauv.readdy.co/"
     },
     {
       title: "UbuntuConnect AI Chatbot",
@@ -34,15 +25,6 @@ const Projects = () => {
       challenges: "Creating accurate AI explanations across multiple languages and cultural contexts",
       githubUrl: "",
       liveUrl: "https://share.chatling.ai/s/p9ACa8o9Ze9kPVg"
-    },
-    {
-      title: "Interactive UI Generator",
-      description: "Developed an intelligent UI generation platform that leverages AI to create responsive, modern user interfaces based on natural language descriptions and design preferences.",
-      image: UIGeneratorImage,
-      technologies: ["React", "TypeScript", "AI Integration", "UI/UX Design"],
-      challenges: "Translating user requirements into functional, aesthetically pleasing interfaces",
-      githubUrl: "",
-      liveUrl: "https://lovable.dev/projects/40956923-14d3-481a-975b-3532ec1b5ebc"
     },
     {
       title: "CareerCraft Platform",
