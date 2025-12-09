@@ -51,7 +51,7 @@ const Projects = () => {
       technologies: ["React", "Supabase", "Authentication", "Full Stack Development"],
       challenges: "Building secure authentication and scalable user management system",
       githubUrl: "",
-      liveUrl: "https://career-craft-9fb33b22.base44.app"
+      liveUrl: "https://career-craft-copy-1f567484.base44.app/"
     },
     {
       title: "MindPulse AI",
@@ -60,7 +60,7 @@ const Projects = () => {
       technologies: ["React", "AI/ML", "Data Analytics", "Healthcare Tech"],
       challenges: "Ensuring data privacy and creating empathetic AI interactions for sensitive topics",
       githubUrl: "",
-      liveUrl: "https://mind-pulse-ai-a1bd00d7.base44.app/"
+      liveUrl: "https://mind-pulse-ai-copy-9dbbaec5.base44.app/"
     }
   ];
 
