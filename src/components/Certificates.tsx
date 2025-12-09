@@ -13,17 +13,6 @@ import {
 
 const certificates = [
   {
-    title: "AI For Everyone",
-    issuer: "DeepLearning.AI via Coursera",
-    date: "September 2025",
-    type: "Professional",
-    description: "An online non-credit course covering AI fundamentals, applications, and business implications.",
-    skills: ["Artificial Intelligence", "AI Applications", "Business Strategy"],
-    link: "https://coursera.org/verify/Z4IIJQW4T1LE",
-    pdf: "/certificates/ai-for-everyone.pdf",
-    image: "/certificates/ai-for-everyone-new.jpg"
-  },
-  {
     title: "Full Stack Development",
     issuer: "FNB App Academy",
     date: "July 2025",
