@@ -43,6 +43,24 @@ const Projects = () => {
       challenges: "Ensuring data privacy and creating empathetic AI interactions for sensitive topics",
       githubUrl: "",
       liveUrl: "https://mind-pulse-ai-copy-9dbbaec5.base44.app/"
+    },
+    {
+      title: "COVID-19 Bias Audit AI",
+      description: "Developed an AI bias auditing framework to detect and analyze potential biases in COVID-19 related datasets and models, ensuring fair and equitable AI applications in healthcare.",
+      image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=800&auto=format&fit=crop",
+      technologies: ["Python", "Machine Learning", "Bias Detection", "Healthcare AI"],
+      challenges: "Identifying subtle biases in medical AI systems and developing mitigation strategies",
+      githubUrl: "",
+      liveUrl: "https://www.kaggle.com/code/hendrymike/covid-19-bias-audit-al?scriptVersionId=281671213"
+    },
+    {
+      title: "Skin Lesion Classification",
+      description: "Built a computer vision model for classifying skin lesions using deep learning, enabling early detection and diagnosis support for dermatological conditions.",
+      image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&auto=format&fit=crop",
+      technologies: ["Computer Vision", "Deep Learning", "Roboflow", "Medical Imaging"],
+      challenges: "Achieving high accuracy in medical image classification with limited training data",
+      githubUrl: "",
+      liveUrl: "https://universe.roboflow.com/techguru-3vxeq/skin_lesion_classification-lyqqy/model/1"
     }
   ];
 
