@@ -30,7 +30,7 @@ const Projects = () => {
       title: "CareerCraft Platform",
       description: "Created a comprehensive career management platform with user authentication, profile management, and job tracking features to help professionals navigate their career journey.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&auto=format&fit=crop",
-      technologies: ["React", "Supabase", "Authentication", "Full Stack Development"],
+      technologies: ["React", "Supabase", "Authentication", "Frontend", "Backend"],
       challenges: "Building secure authentication and scalable user management system",
       githubUrl: "",
       liveUrl: "https://career-craft-copy-1f567484.base44.app/"
