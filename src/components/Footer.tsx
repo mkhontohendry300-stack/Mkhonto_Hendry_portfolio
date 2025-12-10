@@ -17,11 +17,11 @@ const Footer = () => {
   const services = ["Data Analysis", "Visualization", "Statistical Modeling", "Digital Solutions"];
   const socialLinks = [{
     icon: Github,
-    href: "https://github.com/Keitudimps?tab=repositories",
+    href: "https://github.com/mkhontohendry300-stack",
     label: "GitHub"
   }, {
     icon: Linkedin,
-    href: "http://linkedin.com/in/fereshteh-keitumetse-dimpe-4a378b237",
+    href: "https://www.linkedin.com/in/hendry-mike-mkhonto-189904220",
     label: "LinkedIn"
   }, {
     icon: Mail,
