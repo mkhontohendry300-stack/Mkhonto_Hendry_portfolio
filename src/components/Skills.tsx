@@ -22,7 +22,7 @@ const Skills = () => {
     {
       title: "Specializations",
       icon: <CheckCircle className="w-5 h-5 text-gold" />,
-      skills: ["Data Visualization", "Statistical Modeling", "Machine Learning", "Digital Transformation"],
+      skills: ["Data Visualization", "Statistical Modeling", "Machine Learning", "Digital Transformation", "Database Management"],
       color: "ocean",
       bgColor: "bg-gradient-to-r from-gray-50 to-white"
     },

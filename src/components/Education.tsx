@@ -23,7 +23,7 @@ const Education = () => {
       period: "2024",
       status: "Completed",
       description: "Intensive program covering modern web development, including frontend and backend technologies.",
-      focusAreas: ["JavaScript", "React", "Node.js", "Database Design", "API Development"]
+      focusAreas: ["Frontend", "Backend", "JavaScript", "React", "Node.js", "Database Design", "API Development"]
     },
     {
       degree: "Electrical Engineering (N1–N3)",
