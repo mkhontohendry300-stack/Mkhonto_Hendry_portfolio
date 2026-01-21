@@ -6,16 +6,6 @@ import { motion } from "framer-motion";
 const Education = () => {
   const education = [
     {
-      degree: "Diploma Mathematical Sciences",
-      field: "Cape Peninsula University of Technology",
-      institution: "Cape Peninsula University of Technology",
-      location: "Cape Town",
-      period: "2024",
-      status: "Completed",
-      description: "Comprehensive program covering statistical analysis, mathematical modeling, and data science principles.",
-      focusAreas: ["Advanced Statistics", "Data Analysis", "Mathematical Modeling", "Research Methods"]
-    },
-    {
       degree: "Full Stack Development",
       field: "FNB App Academy",
       institution: "FNB App Academy",
@@ -24,6 +14,16 @@ const Education = () => {
       status: "Completed",
       description: "Intensive program covering modern web development, including frontend and backend technologies.",
       focusAreas: ["Frontend", "Backend", "JavaScript", "React", "Node.js", "Database Design", "API Development"]
+    },
+    {
+      degree: "Diploma Mathematical Sciences",
+      field: "Cape Peninsula University of Technology",
+      institution: "Cape Peninsula University of Technology",
+      location: "Cape Town",
+      period: "2024",
+      status: "Completed",
+      description: "Comprehensive program covering statistical analysis, mathematical modeling, and data science principles.",
+      focusAreas: ["Advanced Statistics", "Data Analysis", "Mathematical Modeling", "Research Methods"]
     },
     {
       degree: "Electrical Engineering (N1–N3)",
