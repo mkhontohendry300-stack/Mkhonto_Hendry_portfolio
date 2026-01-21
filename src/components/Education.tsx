@@ -20,7 +20,7 @@ const Education = () => {
       field: "FNB App Academy",
       institution: "FNB App Academy",
       location: "Cape Town",
-      period: "2024",
+      period: "2025",
       status: "Completed",
       description: "Intensive program covering modern web development, including frontend and backend technologies.",
       focusAreas: ["Frontend", "Backend", "JavaScript", "React", "Node.js", "Database Design", "API Development"]

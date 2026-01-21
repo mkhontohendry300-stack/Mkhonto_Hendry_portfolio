@@ -5,10 +5,10 @@ import { Badge } from '@/components/ui/badge';
 const Experience = () => {
   const experiences = [
     {
-      title: "Digital Associate",
+      title: "Data Engineer",
       company: "CAPACITI",
       location: "Cape Town, South Africa", 
-      period: "Sept 2024 - Present",
+      period: "Sept 2025 - Present",
       type: "Full-time",
       description: "Assisting in digital innovation and data-driven business solutions, supporting project teams with data analysis and technology integration.",
       achievements: [
