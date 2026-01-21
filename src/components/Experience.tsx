@@ -12,11 +12,11 @@ const Experience = () => {
       type: "Full-time",
       description: "Assisting in digital innovation and data-driven business solutions, supporting project teams with data analysis and technology integration.",
       achievements: [
-        "Assisting in digital innovation and data-driven business solutions",
-        "Supporting project teams with data analysis and technology integration",
-        "Contributing to digital upskilling and automation initiatives"
+        "Assisted in the development and maintenance of ETL pipelines to support data-driven business solutions",
+        "Supported project teams with data extraction, transformation, and analytical insights",
+        "Contributed to automation initiatives that improved data processing efficiency and reduced manual effort"
       ],
-      technologies: ["Python", "Data Analysis", "Digital Transformation", "Project Management"]
+      technologies: ["Python", "SQL", "Airflow", "ETL & Data Pipelines", "Digital Transformation", "Project Management"]
     },
     {
       title: "Data Analyst",
