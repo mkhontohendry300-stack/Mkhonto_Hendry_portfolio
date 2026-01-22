@@ -8,28 +8,28 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: <Code className="w-5 h-5 text-gold" />,
-      skills: ["Python", "R", "MATLAB", "SQL", "JavaScript", "HTML", "CSS"],
+      skills: ["Python", "R", "MATLAB", "SQL", "JavaScript", "HTML", "CSS", "Shell (Bash)", "Scala"],
       color: "languages",
       bgColor: "bg-gradient-to-r from-white to-gray-50"
     },
     {
       title: "Statistical & Analysis Tools",
       icon: <Wrench className="w-5 h-5 text-gold" />,
-      skills: ["SAS", "GitHub", "Vercel", "Excel", "NetworkX", "Pandas", "Matplotlib"],
+      skills: ["SAS", "GitHub", "Vercel", "Excel", "NetworkX", "Pandas", "Matplotlib", "Power BI", "Statistical Testing"],
       color: "accent",
       bgColor: "bg-white"
     },
     {
       title: "Specializations",
       icon: <CheckCircle className="w-5 h-5 text-gold" />,
-      skills: ["Data Visualization", "Statistical Modeling", "Machine Learning", "Digital Transformation", "Database Management"],
+      skills: ["Data Visualization", "Statistical Modeling", "Machine Learning", "Database Management", "ETL / ELT Pipeline", "Airflow", "Star & Snowflake Schema"],
       color: "ocean",
       bgColor: "bg-gradient-to-r from-gray-50 to-white"
     },
     {
       title: "Soft Skills",
       icon: <Users className="w-5 h-5 text-gold" />,
-      skills: ["Problem Solving", "Teamwork", "Communication", "Adaptability"],
+      skills: ["Problem Solving", "Teamwork", "Communication", "Adaptability", "Accountability"],
       color: "soft",
       bgColor: "bg-white"
     }
